@@ -743,7 +743,6 @@ button:focus svg {
 /* FOOTER-FORM */
 .form {
   width: 600px;
-  outline: 1px solid red;
   display: flex;
   padding-top: 20px;
   padding-left: 30px;
@@ -814,4 +813,28 @@ button:focus svg {
 .submit-icon {
   margin-left: 10px;
   fill: #ffffff;
+}
+/* АКТИВНОЕ МОДАЛЬНОЕ ОКНО  */
+
+.group {
+}
+
+.group b {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 528px;
+  height: 581px;
 }
