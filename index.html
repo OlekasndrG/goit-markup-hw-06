@@ -396,12 +396,59 @@
     </section>
 
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <button type="button" data-modal-close class="button">
-          <svg class="close" width="18px" height="18px" viewBox="0 0 100 100">
-            <use xlink:href="./images/sprite.svg#close"></use>
-          </svg>
-        </button>
+      <div class="modal ">
+        <form class="form" autocomplete="off">
+          <b>Залиште свої дані, ми вам передзвонимо</b>
+          <div class="form-field">
+            <label for="name" class="form-label">Ім'я</label>
+            <input type="text" name="name" id="name" class="form-input">
+            <span class="modal-icon">
+              <svg class="modal-icon-svg" width="12" height="12" viewBox="0 0 32 32">
+                <use xlink:href="./images/sprite.svg#name"></use>
+              </svg>
+            </span>
+          </div>
+
+
+          <div class="form-field">
+            <label for="tel" class="form-label">Телефон</label>
+            <input type="tel" name="tel" id="tel" class="form-input">
+          </div>
+          <div class="form-field">
+            <label for="email" class="form-label">Пошта</label>
+            <input type="email" name="email" id="email" class="form-input">
+          </div>
+          <div class="form-field comment">
+            <label for="comment" class="form-label">Комментар</label>
+            <textarea type="text" rows="5" name="comment" id="comment" placeholder="Введіть текст"
+              class="form-textarea"></textarea>
+          </div>
+          <div class="policy">
+            <label class="checkbox-label">
+              <input class="checkbox" type="checkbox" name="policy" value="policy" />
+              <span class="checkbox-border">
+                <span class="checkbox-icon">
+                  <svg class="checkbox-icon" width="15" height="15" viewBox="0 0 32 32">
+                    <use xlink:href="./images/sprite.svg#check"></use>
+                  </svg>
+                </span>
+              </span>
+              <span> Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></span>
+
+            </label>
+          </div>
+          <div>
+            <button type="submit" class="submit-btn">
+              <p> Відправити</p>
+            </button>
+          </div>
+
+          <button type="button" data-modal-close class="close-button">
+            <svg class="close" width="18" height="18" viewBox="0 0 100 100">
+              <use xlink:href="./images/sprite.svg#close"></use>
+            </svg>
+          </button>
+
       </div>
     </div>
 
@@ -466,46 +513,22 @@
           </li>
         </ul>
       </div>
-      <form class="form">
-        <div class="form-field">
-          <label for="email" class="form-label">Підпишіться на розсилку</label>
-          <input type="email" name="email" id="email" placeholder="E-mail">
+      <form class="footer-form">
+        <div class="footer-form-field">
+          <label for="email" class="footer-form-label">Підпишіться на розсилку</label>
+          <input type="email" name="email" id="email" placeholder="E-mail" class="footer-form-input">
         </div>
         <div>
-          <button type="submit" class="form-btn" >
+          <button type="submit" class="footer-form-btn">
             <p>Підписатися</p>
-            <svg class="submit-icon" width="24px" height="24px" viewBox="0 0 32 32">
+            <svg class="footer-submit-icon" width="24" height="24" viewBox="0 0 32 32">
               <use xlink:href="./images/sprite.svg#send"></use>
             </svg>
-
           </button>
         </div>
       </form>
     </div>
-    <div role="group" class="group">
-      <b>Залиште свої дані, ми вам передзвонимо</b>
-      <form class="feedback" role="group">
-        <div class="form-field">
-          <label for="name" class="form-label">Ім'я</label>
-          
-          <input type="name" name="name" id="name">
-          <svg class="submit-icon" width="24px" height="24px" viewBox="0 0 32 32">
-            <use xlink:href="./images/sprite.svg#name"></use>
-          </svg>
-        </div>
-        <div class="form-field">
-          <label for="tel" class="form-label">Підпишіться на розсилку</label>
-          <input type="tel" name="tel" id="tel">
-        </div>
-        <div class="form-field">
-          <label for="email" class="form-label">Підпишіться на розсилку</label>
-          <input type="email" name="email" id="email" >
-        </div>
-        <div class="form-field">
-          <label for="comment" class="form-label">Комментар</label>
-          <input type="text" name="comment" id="comment" placeholder="Введіть текст" >
-        </div>
-    </div>
+
   </footer>
 
 
