@@ -638,16 +638,18 @@ img {
   width: 30px;
   height: 30px;
 }
+
+.close {
+  fill: currentColor;
+  margin-top: 5px;
+  transition: fill 250ms var(--animation-timing-function);
+}
+
 .close-button:hover svg {
   fill: var(--accent-text-color);
 }
 .close-button:focus svg {
   fill: var(--accent-text-color);
-}
-
-.close {
-  fill: currentColor;
-  margin-top: 5px;
 }
 
 /* АКТИВНОЕ МОДАЛЬНОЕ ОКНО  */
@@ -766,7 +768,8 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 2px;
   background-color: #ffffff;
-  background-origin: border-box;
+  /* background-origin: border-box; */
+  transition: var(--transition-bg);
 }
 .checkbox-icon {
   position: absolute;
@@ -778,6 +781,10 @@ img {
 .checkbox:checked ~ .checkbox-border {
   background-color: var(--accent-text-color);
 }
+.checkbox-policy {
+  color: rgba(33, 150, 243, 1);
+}
+
 .submit-btn {
   width: 200px;
   height: 50px;
@@ -938,6 +945,7 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2f303a;
+  color: #ffffff;
 
   transition: border 250ms var(--animation-timing-function);
 }
