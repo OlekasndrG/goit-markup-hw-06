@@ -65,7 +65,7 @@ img {
 }
 /* логотип */
 .logo {
-  color: #2196f3;
+  color: var(--accent-text-color);
   text-decoration: none;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -239,7 +239,7 @@ img {
   border: 1px transparent;
   min-width: 152px;
 
-  background-color: #2196f3;
+  background-color: var(--accent-text-color);
   color: var(--white-color);
 
   cursor: pointer;
@@ -652,13 +652,6 @@ img {
 
 /* АКТИВНОЕ МОДАЛЬНОЕ ОКНО  */
 
-/* .feedback {
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-  width: 528px;
-  height: 581px;
-} */
 .form {
   display: flex;
   flex-direction: column;
@@ -701,14 +694,26 @@ img {
   left: 18px;
   display: inline-block;
   fill: currentColor;
+
+  transition: fill 250ms var(--animation-timing-function);
 }
 .form-field:focus-within > .modal-icon {
   fill: var(--accent-text-color);
 }
+.form-input {
+  width: 100%;
+  outline: none;
+
+  transition: border 250ms var(--animation-timing-function);
+}
 
 .form-input:hover,
 .form-input:focus {
-  border: 1px solid #2196f3;
+  border: 1px solid var(--accent-text-color);
+}
+.form-textarea:focus,
+.form-textarea:hover {
+  border: 1px solid var(--accent-text-color);
 }
 
 .comment {
@@ -725,6 +730,7 @@ img {
   resize: none;
   padding: 12px 16px;
   outline: none;
+  transition: border 250ms var(--animation-timing-function);
 }
 .form-textarea::placeholder {
   font-family: "Roboto";
@@ -776,7 +782,7 @@ img {
   width: 200px;
   height: 50px;
   border: none;
-  background-color: #2196f3;
+  background-color: var(--accent-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
@@ -786,6 +792,8 @@ img {
   align-items: center;
   text-align: center;
   justify-content: center;
+
+  transition: var(--transition-bg);
 }
 .form .submit-btn p {
   color: #ffffff;
@@ -797,9 +805,9 @@ img {
   letter-spacing: 0.06em;
 }
 
-.form-input {
-  width: 100%;
-  outline: none;
+.submit-btn:hover,
+.submit-btn:focus {
+  background-color: #188ce8;
 }
 
 /* футер */
@@ -930,6 +938,12 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2f303a;
+
+  transition: border 250ms var(--animation-timing-function);
+}
+
+.footer-form-input:hover {
+  border: 1px solid var(--accent-text-color);
 }
 .footer-form-field input::placeholder {
   font-style: normal;
@@ -970,9 +984,15 @@ img {
   letter-spacing: 0.06em;
 
   color: #ffffff;
+
+  transition: var(--transition-bg);
 }
 
 .footer-submit-icon {
   margin-left: 10px;
   fill: #ffffff;
+}
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background-color: #188ce8;
 }

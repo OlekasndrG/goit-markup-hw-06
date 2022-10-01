@@ -397,7 +397,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal ">
-        <form class="form" autocomplete="off">
+        <form class="form">
           <b>Залиште свої дані, ми вам передзвонимо</b>
           <div class="form-field">
             <label for="name" class="form-label">Ім'я</label>
@@ -413,10 +413,20 @@
           <div class="form-field">
             <label for="tel" class="form-label">Телефон</label>
             <input type="tel" name="tel" id="tel" class="form-input">
+            <span class="modal-icon">
+              <svg class="modal-icon-svg" width="13" height="13" viewBox="0 0 32 32">
+                <use xlink:href="./images/sprite.svg#tel"></use>
+              </svg>
+            </span>
           </div>
           <div class="form-field">
             <label for="email" class="form-label">Пошта</label>
             <input type="email" name="email" id="email" class="form-input">
+            <span class="modal-icon">
+              <svg class="modal-icon-svg" width="15" height="12" viewBox="0 0 32 32">
+                <use xlink:href="./images/sprite.svg#email"></use>
+              </svg>
+            </span>
           </div>
           <div class="form-field comment">
             <label for="comment" class="form-label">Комментар</label>
@@ -448,7 +458,7 @@
               <use xlink:href="./images/sprite.svg#close"></use>
             </svg>
           </button>
-
+        </form>>
       </div>
     </div>
 
